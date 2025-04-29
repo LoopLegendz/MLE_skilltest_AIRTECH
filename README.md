@@ -5,15 +5,16 @@ This repository contains my solutions for the AIR TECH Machine Learning Engineer
 ## Project Structure
 
 ```
-bnp_paribas_test/
-├── src/                    # Main source code
+mle_skilltest_airtech/
+├── src/
 │   ├── coding_challenge_1.py
-│   └── coding_challenge_2.py
-├── scripts/                # Additional scripts
-│   └── sql.py              # SQL exercises
-└── tests/                  # Unit tests
+│   ├── coding_challenge_2.py
+│   ├── sql.py
+│   └── __init.py__
+└── tests/
     ├── test_coding_challenge_1.py
-    └── test_coding_challenge_2.py
+    ├── test_coding_challenge_2.py
+    └── __init__.py
 ```
 
 ## Setup Instructions
@@ -21,7 +22,7 @@ bnp_paribas_test/
 1. Clone the repository:
 ```bash
 git clone <your-repository-url>
-cd bnp_paribas_test
+cd mle_skilltest_airtech
 ```
 
 2. Create a virtual environment (recommended):
@@ -47,7 +48,7 @@ python3 src/coding_challenge_2.py
 ### SQL Exercises
 Run SQL exercises:
 ```bash
-python3 scripts/sql.py
+python3 src/sql.py
 ```
 
 ## Running Tests
@@ -61,4 +62,5 @@ python3 -m pytest -v tests/
 
 # Run specific test file
 python3 -m pytest tests/test_coding_challenge_1.py
+python3 -m pytest tests/test_coding_challenge_2.py
 ```
