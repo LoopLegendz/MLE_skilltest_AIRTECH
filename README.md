@@ -1,20 +1,20 @@
-# BNP Paribas MLE Technical Test
+# AIR TECH MLE Technical Test
 
-This repository contains my solutions for the BNP Paribas Machine Learning Engineer technical test.
+This repository contains my solutions for the AIR TECH Machine Learning Engineer technical test.
 
 ## Project Structure
 
+```
 bnp_paribas_test/
-├── src/ # Main source code
-│ ├── coding_challenge_1.py
-│ └── coding_challenge_2.py
-  └── sql.py # SQL exercises
-├── tests/ # Unit tests
-│ ├── test_coding_challenge_1.py
-  └── test_coding_challenge_2.py
-  
-
-## Setup Instructions
+├── src/                    # Main source code
+│   ├── coding_challenge_1.py
+│   └── coding_challenge_2.py
+├── scripts/                # Additional scripts
+│   └── sql.py              # SQL exercises
+└── tests/                  # Unit tests
+    ├── test_coding_challenge_1.py
+    └── test_coding_challenge_2.py
+```
 
 ## Setup Instructions
 
@@ -35,22 +35,30 @@ source venv/bin/activate  # On macOS/Linux
 python3 -m pip install -r requirements.txt
 ```
 
+## Running the Code
+
+### Coding Challenges
+Run individual challenges:
+```bash
+python3 src/coding_challenge_1.py
+python3 src/coding_challenge_2.py
+```
+
+### SQL Exercises
+Run SQL exercises:
+```bash
+python3 scripts/sql.py
+```
+
 ## Running Tests
 Make sure your virtual environment is activated, then run:
 ```bash
+# Run all tests
 python3 -m pytest tests/
-```
-```
 
-Try these commands in order:
-```bash
-# Create and activate virtual environment
-python3 -m venv venv
-source venv/bin/activate
+# Run tests with verbose output
+python3 -m pytest -v tests/
 
-# Install dependencies
-python3 -m pip install -r requirements.txt
-
-# Run tests
-python3 -m pytest tests/
+# Run specific test file
+python3 -m pytest tests/test_coding_challenge_1.py
 ```
